@@ -1,0 +1,6 @@
+{
+  "name": "Space Cargo Architect - Simulasi Kubus & Balok",
+  "description": "Game edukasi matematika interaktif Fase C SD tentang jaring-jaring, volume kubus satuan, dan luas permukaan kubus dan balok bertema kargo luar angkasa futuristik dengan visual 3D interaktif dan AI visualizer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

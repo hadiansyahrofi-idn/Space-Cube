@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Orbitron', monospace, sans-serif;
+}
+
+.font-tech {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Glassmorphism & Cyberpunk Neon Utilities */
+.glass-panel {
+  background: rgba(13, 20, 44, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.glass-panel-glow {
+  background: rgba(15, 23, 52, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-accent {
+  background: rgba(20, 16, 48, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  box-shadow: 0 0 25px -5px rgba(168, 85, 247, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.neon-glow-cyan {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.45);
+}
+
+.neon-glow-violet {
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.45);
+}
+
+.neon-glow-amber {
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.45);
+}
+
+.neon-glow-emerald {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.45);
+}
+
+/* Cyber grid background */
+.space-bg {
+  background-color: #050713;
+  background-image: 
+    radial-gradient(ellipse at 50% 0%, rgba(56, 189, 248, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 85% 85%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
+    linear-gradient(to right, rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(8, 12, 26, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.6);
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(1000%);
+  }
+}
+
+.animate-scanline {
+  animation: scanline 8s linear infinite;
+}
